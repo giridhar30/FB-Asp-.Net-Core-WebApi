@@ -245,6 +245,49 @@ namespace FbBackend.Data
                 }
                 context.SaveChanges();
             }
+            if (!context.Watch.Any())
+            {
+                var watchs = new Watch[]
+              {
+                  new Watch
+                  {
+                      no_of_comments = "25M",
+                      no_of_like = "32M",
+                      no_of_views = "112M",
+                      posted_date = "march 27 at 12:45",
+                      user_dp = "https://static.toiimg.com/photo/msid-90466724/90466724.jpg?39050",
+                      username = "Ram charan",
+                      video = "https://www.youtube.com/embed/G62HrubdD6o"
+                  },
+                  new Watch
+                  {
+                      no_of_comments = "25M",
+                      no_of_like = "32M",
+                      no_of_views = "112M",
+                      posted_date = "march 27 at 12:45",
+                      user_dp = "https://static.toiimg.com/photo/msid-90466724/90466724.jpg?39050",
+                      username = "Ram charan",
+                      video = "https://www.youtube.com/embed/G62HrubdD6o"
+                  },
+                  new Watch
+                  {
+                      no_of_comments = "25M",
+                      no_of_like = "32M",
+                      no_of_views = "112M",
+                      posted_date = "march 27 at 12:45",
+                      user_dp = "https://static.toiimg.com/photo/msid-90466724/90466724.jpg?39050",
+                      username = "Ram charan",
+                      video = "https://www.youtube.com/embed/G62HrubdD6o"
+                  },
+
+              };
+                foreach (Watch w in watchs)
+                {
+                    context.Watch.Add(w);
+                }
+                context.SaveChanges();
+
+            }
         }
     }
 }
