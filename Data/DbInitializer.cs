@@ -73,7 +73,7 @@ namespace FbBackend.Data
                 context.SaveChanges();
             }
 
-            if (!context.Users.Any())
+            if (!context.User.Any())
             {
                 
             }
