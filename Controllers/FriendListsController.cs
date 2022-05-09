@@ -12,48 +12,48 @@ namespace FbBackend.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class PostsController : ControllerBase
+    public class FriendListsController : ControllerBase
     {
         private readonly FbContext _context;
 
-        public PostsController(FbContext context)
+        public FriendListsController(FbContext context)
         {
             _context = context;
         }
 
-        // GET: api/Posts
+        // GET: api/FriendLists
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Post>>> GetPosts()
+        public async Task<ActionResult<IEnumerable<FriendList>>> GetFriendList()
         {
-            return await _context.Posts.ToListAsync();
+            return await _context.FriendList.ToListAsync();
         }
 
-        // GET: api/Posts/5
+        // GET: api/FriendLists/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Post>> GetPost(int id)
+        public async Task<ActionResult<FriendList>> GetFriendList(int id)
         {
-            var post = await _context.Posts.FindAsync(id);
+            var friendList = await _context.FriendList.FindAsync(id);
 
-            if (post == null)
+            if (friendList == null)
             {
                 return NotFound();
             }
 
-            return post;
+            return friendList;
         }
 
-        // PUT: api/Posts/5
+        // PUT: api/FriendLists/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutPost(int id, Post post)
+        public async Task<IActionResult> PutFriendList(int id, FriendList friendList)
         {
-            if (id != post.Id)
+            if (id != friendList.Id)
             {
                 return BadRequest();
             }
 
-            _context.Entry(post).State = EntityState.Modified;
+            _context.Entry(friendList).State = EntityState.Modified;
 
             try
             {
@@ -61,7 +61,7 @@ namespace FbBackend.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!PostExists(id))
+                if (!FriendListExists(id))
                 {
                     return NotFound();
                 }
@@ -74,37 +74,37 @@ namespace FbBackend.Controllers
             return NoContent();
         }
 
-        // POST: api/Posts
+        // POST: api/FriendLists
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<Post>> PostPost(Post post)
+        public async Task<ActionResult<FriendList>> PostFriendList(FriendList friendList)
         {
-            _context.Posts.Add(post);
+            _context.FriendList.Add(friendList);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetPost", new { id = post.Id }, post);
+            return CreatedAtAction("GetFriendList", new { id = friendList.Id }, friendList);
         }
 
-        // DELETE: api/Posts/5
+        // DELETE: api/FriendLists/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<Post>> DeletePost(int id)
+        public async Task<ActionResult<FriendList>> DeleteFriendList(int id)
         {
-            var post = await _context.Posts.FindAsync(id);
-            if (post == null)
+            var friendList = await _context.FriendList.FindAsync(id);
+            if (friendList == null)
             {
                 return NotFound();
             }
 
-            _context.Posts.Remove(post);
+            _context.FriendList.Remove(friendList);
             await _context.SaveChangesAsync();
 
-            return post;
+            return friendList;
         }
 
-        private bool PostExists(int id)
+        private bool FriendListExists(int id)
         {
-            return _context.Posts.Any(e => e.Id == id);
+            return _context.FriendList.Any(e => e.Id == id);
         }
     }
 }

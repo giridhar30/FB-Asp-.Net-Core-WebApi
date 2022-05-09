@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+tDx5eguAoQQlTIHHm0FVHRpg6ZAvgSRs8kT81fDFC6btJwm+uW8ez9yA0A41vO2GRoGwrgfwcBloAMyjs4SHA==",
+  "dgSpecHash": "BZp2WoKBey187Hu8Mz69NlDr9CoUZ4wNBNWuVlP6XpDB4GS91Pa/DnXTN2KlWw/FzUHgMmvZDmdDX21KLphs0g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\VC\\Source\\Repos\\FB-Asp-.Net-Core-WebApi\\FbBackend.csproj",
+  "projectFilePath": "C:\\Users\\VC\\source\\repos\\FB-Asp-.Net-Core-WebApi\\FbBackend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\VC\\.nuget\\packages\\microsoft.aspnet.cors\\5.2.8\\microsoft.aspnet.cors.5.2.8.nupkg.sha512",
     "C:\\Users\\VC\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.8\\microsoft.aspnet.webapi.client.5.2.8.nupkg.sha512",

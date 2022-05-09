@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\VC\\Source\\Repos\\FB-Asp-.Net-Core-WebApi\\FbBackend.csproj": {}
+    "C:\\Users\\VC\\source\\repos\\FB-Asp-.Net-Core-WebApi\\FbBackend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\VC\\Source\\Repos\\FB-Asp-.Net-Core-WebApi\\FbBackend.csproj": {
+    "C:\\Users\\VC\\source\\repos\\FB-Asp-.Net-Core-WebApi\\FbBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\VC\\Source\\Repos\\FB-Asp-.Net-Core-WebApi\\FbBackend.csproj",
+        "projectUniqueName": "C:\\Users\\VC\\source\\repos\\FB-Asp-.Net-Core-WebApi\\FbBackend.csproj",
         "projectName": "FbBackend",
-        "projectPath": "C:\\Users\\VC\\Source\\Repos\\FB-Asp-.Net-Core-WebApi\\FbBackend.csproj",
+        "projectPath": "C:\\Users\\VC\\source\\repos\\FB-Asp-.Net-Core-WebApi\\FbBackend.csproj",
         "packagesPath": "C:\\Users\\VC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\VC\\Source\\Repos\\FB-Asp-.Net-Core-WebApi\\obj\\",
+        "outputPath": "C:\\Users\\VC\\source\\repos\\FB-Asp-.Net-Core-WebApi\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\VC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -49,6 +53,12 @@
               "version": "[2.2.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.24, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[3.1.24, )"
             },
