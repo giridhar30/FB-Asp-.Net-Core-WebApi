@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\dot-net-projs\\FbBackend\\FbBackend.csproj": {}
+    "D:\\dotnet\\FB-Asp-.Net-Core-WebApi\\FbBackend.csproj": {}
   },
   "projects": {
-    "D:\\dot-net-projs\\FbBackend\\FbBackend.csproj": {
+    "D:\\dotnet\\FB-Asp-.Net-Core-WebApi\\FbBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\dot-net-projs\\FbBackend\\FbBackend.csproj",
+        "projectUniqueName": "D:\\dotnet\\FB-Asp-.Net-Core-WebApi\\FbBackend.csproj",
         "projectName": "FbBackend",
-        "projectPath": "D:\\dot-net-projs\\FbBackend\\FbBackend.csproj",
-        "packagesPath": "C:\\Users\\Vc\\.nuget\\packages\\",
-        "outputPath": "D:\\dot-net-projs\\FbBackend\\obj\\",
+        "projectPath": "D:\\dotnet\\FB-Asp-.Net-Core-WebApi\\FbBackend.csproj",
+        "packagesPath": "C:\\Users\\VC\\.nuget\\packages\\",
+        "outputPath": "D:\\dotnet\\FB-Asp-.Net-Core-WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Vc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\VC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -50,17 +50,21 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.1.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[3.1.0, )"
+              "version": "[3.1.24, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[3.1.0, )"
+              "version": "[3.1.24, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.24, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.5, )"
             }
           },
           "imports": [

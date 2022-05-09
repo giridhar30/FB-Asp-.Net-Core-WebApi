@@ -15,5 +15,7 @@ namespace FbBackend.Data
         {
             modelBuilder.Entity<Post>().ToTable("Post");
         }
+
+        public DbSet<FbBackend.Models.User> User { get; set; }
     }
 }
