@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\VC\\Source\\Repos\\FB-Asp-.Net-Core-WebApi\\FbBackend.csproj": {}
+    "D:\\DOTNET\\FB-Asp-.Net-Core-WebApi\\FbBackend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\VC\\Source\\Repos\\FB-Asp-.Net-Core-WebApi\\FbBackend.csproj": {
+    "D:\\DOTNET\\FB-Asp-.Net-Core-WebApi\\FbBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\VC\\Source\\Repos\\FB-Asp-.Net-Core-WebApi\\FbBackend.csproj",
+        "projectUniqueName": "D:\\DOTNET\\FB-Asp-.Net-Core-WebApi\\FbBackend.csproj",
         "projectName": "FbBackend",
-        "projectPath": "C:\\Users\\VC\\Source\\Repos\\FB-Asp-.Net-Core-WebApi\\FbBackend.csproj",
+        "projectPath": "D:\\DOTNET\\FB-Asp-.Net-Core-WebApi\\FbBackend.csproj",
         "packagesPath": "C:\\Users\\VC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\VC\\Source\\Repos\\FB-Asp-.Net-Core-WebApi\\obj\\",
+        "outputPath": "D:\\DOTNET\\FB-Asp-.Net-Core-WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\VC\\AppData\\Roaming\\NuGet\\NuGet.Config",
