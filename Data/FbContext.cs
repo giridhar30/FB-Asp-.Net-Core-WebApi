@@ -17,5 +17,7 @@ namespace FbBackend.Data
         }
 
         public DbSet<FbBackend.Models.User> User { get; set; }
+
+        public DbSet<FbBackend.Models.Watch> Watch { get; set; }
     }
 }
