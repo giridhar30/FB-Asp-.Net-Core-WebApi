@@ -75,7 +75,155 @@ namespace FbBackend.Data
 
             if (!context.User.Any())
             {
-                
+                var users = new User[]
+                {
+                    new User{
+                        Name="Wes Anderson",
+                        ProfileImg="https://cdn.allfamous.org/people/avatars/wes-anderson-m4f2-allfamous.org.jpg",
+                        Active=true,
+                        Mutual=4
+                    },
+                    new User{
+                        Name="Quentin Tarantino",
+                        ProfileImg="https://www.themoviedb.org/t/p/w235_and_h235_face/1gjcpAa99FAOWGnrUvHEXXsRs7o.jpg",
+                        Active=true,
+                        Mutual=4
+                    },
+                    new User{
+                        Name="Yorgos Lanthimos",
+                        ProfileImg="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Yorgos_Lanthimos%2C_THE_LOBSTER%2C_Fantastic_Fest_2015_-9674_%2827161878820%29.jpg/330px-Yorgos_Lanthimos%2C_THE_LOBSTER%2C_Fantastic_Fest_2015_-9674_%2827161878820%29.jpg",
+                        Active=true,
+                        Mutual=4
+                    },
+                    new User{
+                        Name="Alejandro Inarritu",
+                        ProfileImg="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Alejandro_Gonz%C3%A1lez_I%C3%B1%C3%A1rritu_2014.jpg/654px-Alejandro_Gonz%C3%A1lez_I%C3%B1%C3%A1rritu_2014.jpg",
+                        Active=true,
+                        Mutual=4
+                    },
+                    new User{
+                        Name="Bong Joon Ho",
+                        ProfileImg="https://s3.amazonaws.com/criterion-production/explore_images/1028-a00db9fe603bb7d63d1851d110b824a2/DUG7s5aiNsjhrNGxBO0Ex60XJvGjfd_original.jpg",
+                        Active=true,
+                        Mutual=4
+                    }
+                };
+
+                foreach (User u in users)
+                {
+                    context.User.Add(u);
+                }
+
+                context.SaveChanges();
+            }
+
+            if (!context.ProfileFriend.Any())
+            {
+                var profileFriends = new ProfileFriend[]
+                {
+                    new ProfileFriend
+                    {
+                        Name = "Burn Abasse",
+                        Img = "https://randomuser.me/api/portraits/men/23.jpg",
+                    },
+                    new ProfileFriend
+                    {
+                        Name = "Neab Mey",
+                        Img = "https://randomuser.me/api/portraits/men/27.jpg",
+                    },
+                    new ProfileFriend
+                    {
+                        Name = "Ogbulata Rolly B Roland",
+                        Img = "https://randomuser.me/api/portraits/men/22.jpg",
+                    },
+                    new ProfileFriend
+                    {
+                        Name = "Machaba Marceloovoid",
+                        Img = "https://randomuser.me/api/portraits/men/52.jpg",
+                    },
+                    new ProfileFriend
+                    {
+                        Name = "Rubengod de Luque",
+                        Img = "https://randomuser.me/api/portraits/men/67.jpg",
+                    },
+                    new ProfileFriend
+                    {
+                        Name = "Sangkut Susanti",
+                        Img = "https://randomuser.me/api/portraits/men/39.jpg",
+                    },
+                    new ProfileFriend
+                    {
+                        Name = "Kazol Kazol",
+                        Img = "https://randomuser.me/api/portraits/men/81.jpg",
+                    },
+                    new ProfileFriend
+                    {
+                        Name = "LƯU NGUYÊN",
+                        Img = "https://randomuser.me/api/portraits/men/80.jpg",
+                    },
+                    new ProfileFriend
+                    {
+                        Name = "Yeen Prc",
+                        Img = "https://randomuser.me/api/portraits/men/61.jpg",
+                    }
+                };
+
+                foreach (ProfileFriend pf in profileFriends)
+                {
+                    context.ProfileFriend.Add(pf);
+                }
+
+                context.SaveChanges();
+            }
+
+            if (!context.ProfilePhoto.Any())
+            {
+                var profilePhotos = new ProfilePhoto[]
+                {
+                    new ProfilePhoto
+                    {
+                        Url = "https://randomuser.me/api/portraits/men/4.jpg"
+                    },
+                    new ProfilePhoto
+                    {
+                        Url = "https://randomuser.me/api/portraits/men/88.jpg"
+                    },
+                    new ProfilePhoto
+                    {
+                        Url = "https://randomuser.me/api/portraits/men/66.jpg"
+                    },
+                    new ProfilePhoto
+                    {
+                        Url = "https://randomuser.me/api/portraits/men/62.jpg"
+                    },
+                    new ProfilePhoto
+                    {
+                        Url = "https://randomuser.me/api/portraits/men/90.jpg"
+                    },
+                    new ProfilePhoto
+                    {
+                        Url = "https://randomuser.me/api/portraits/men/49.jpg"
+                    },
+                    new ProfilePhoto
+                    {
+                        Url = "https://randomuser.me/api/portraits/men/24.jpg"
+                    },
+                    new ProfilePhoto
+                    {
+                        Url = "https://randomuser.me/api/portraits/men/55.jpg"
+                    },
+                    new ProfilePhoto
+                    {
+                        Url = "https://randomuser.me/api/portraits/men/82.jpg"
+                    }
+                };
+
+                foreach (ProfilePhoto pp in profilePhotos)
+                {
+                    context.ProfilePhoto.Add(pp);
+                }
+
+                context.SaveChanges();
             }
         }
     }

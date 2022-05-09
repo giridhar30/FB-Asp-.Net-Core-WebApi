@@ -8787,11 +8787,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DOTNET\\FB-Asp-.Net-Core-WebApi\\FbBackend.csproj",
+      "projectUniqueName": "D:\\dotnet\\FB-Asp-.Net-Core-WebApi\\FbBackend.csproj",
       "projectName": "FbBackend",
-      "projectPath": "D:\\DOTNET\\FB-Asp-.Net-Core-WebApi\\FbBackend.csproj",
+      "projectPath": "D:\\dotnet\\FB-Asp-.Net-Core-WebApi\\FbBackend.csproj",
       "packagesPath": "C:\\Users\\VC\\.nuget\\packages\\",
-      "outputPath": "D:\\DOTNET\\FB-Asp-.Net-Core-WebApi\\obj\\",
+      "outputPath": "D:\\dotnet\\FB-Asp-.Net-Core-WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\VC\\AppData\\Roaming\\NuGet\\NuGet.Config",
