@@ -23,5 +23,7 @@ namespace FbBackend.Data
         public DbSet<User> User { get; set; }
         public DbSet<ProfileFriend> ProfileFriend { get; set; }
         public DbSet<FbBackend.Models.ProfilePhoto> ProfilePhoto { get; set; }
+        public DbSet<FbBackend.Models.MarketData> MarketData { get; set; }
+        public DbSet<FbBackend.Models.Gpost> Gpost { get; set; }
     }
 }
