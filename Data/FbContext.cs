@@ -20,6 +20,8 @@ namespace FbBackend.Data
         public DbSet<FbBackend.Models.FriendList> FriendList { get; set; }
         public DbSet<FbBackend.Models.FriendSuggestion> FriendSuggestion { get; set; }
 
+        public DbSet<Watch> Watch {get;set;}
+
 
         public DbSet<FbBackend.Models.User> User { get; set; }
     }
