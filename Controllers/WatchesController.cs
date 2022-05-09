@@ -12,48 +12,48 @@ namespace FbBackend.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class PostsController : ControllerBase
+    public class WatchesController : ControllerBase
     {
         private readonly FbContext _context;
 
-        public PostsController(FbContext context)
+        public WatchesController(FbContext context)
         {
             _context = context;
         }
 
-        // GET: api/Posts
+        // GET: api/Watches
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Post>>> GetPosts()
+        public async Task<ActionResult<IEnumerable<Watch>>> GetWatch()
         {
-            return await _context.Posts.ToListAsync();
+            return await _context.Watch.ToListAsync();
         }
 
-        // GET: api/Posts/5
+        // GET: api/Watches/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Post>> GetPost(int id)
+        public async Task<ActionResult<Watch>> GetWatch(int id)
         {
-            var post = await _context.Posts.FindAsync(id);
+            var watch = await _context.Watch.FindAsync(id);
 
-            if (post == null)
+            if (watch == null)
             {
                 return NotFound();
             }
 
-            return post;
+            return watch;
         }
 
-        // PUT: api/Posts/5
+        // PUT: api/Watches/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutPost(int id, Post post)
+        public async Task<IActionResult> PutWatch(int id, Watch watch)
         {
-            if (id != post.Id)
+            if (id != watch.Id)
             {
                 return BadRequest();
             }
 
-            _context.Entry(post).State = EntityState.Modified;
+            _context.Entry(watch).State = EntityState.Modified;
 
             try
             {
@@ -61,7 +61,7 @@ namespace FbBackend.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!PostExists(id))
+                if (!WatchExists(id))
                 {
                     return NotFound();
                 }
@@ -74,37 +74,37 @@ namespace FbBackend.Controllers
             return NoContent();
         }
 
-        // POST: api/Posts
+        // POST: api/Watches
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<Post>> PostPost(Post post)
+        public async Task<ActionResult<Watch>> PostWatch(Watch watch)
         {
-            _context.Posts.Add(post);
+            _context.Watch.Add(watch);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetPost", new { id = post.Id }, post);
+            return CreatedAtAction("GetWatch", new { id = watch.Id }, watch);
         }
 
-        // DELETE: api/Posts/5
+        // DELETE: api/Watches/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<Post>> DeletePost(int id)
+        public async Task<ActionResult<Watch>> DeleteWatch(int id)
         {
-            var post = await _context.Posts.FindAsync(id);
-            if (post == null)
+            var watch = await _context.Watch.FindAsync(id);
+            if (watch == null)
             {
                 return NotFound();
             }
 
-            _context.Posts.Remove(post);
+            _context.Watch.Remove(watch);
             await _context.SaveChangesAsync();
 
-            return post;
+            return watch;
         }
 
-        private bool PostExists(int id)
+        private bool WatchExists(int id)
         {
-            return _context.Posts.Any(e => e.Id == id);
+            return _context.Watch.Any(e => e.Id == id);
         }
     }
 }

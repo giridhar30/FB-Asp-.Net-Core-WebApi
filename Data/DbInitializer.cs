@@ -108,7 +108,6 @@ namespace FbBackend.Data
                         Mutual=4
                     }
                 };
-
                 foreach (User u in users)
                 {
                     context.User.Add(u);

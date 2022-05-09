@@ -3,14 +3,16 @@ using FbBackend.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace FbBackend.Migrations
 {
     [DbContext(typeof(FbContext))]
-    partial class FbContextModelSnapshot : ModelSnapshot
+    [Migration("20220509134546_Friends")]
+    partial class Friends
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -144,54 +146,6 @@ namespace FbBackend.Migrations
                     b.ToTable("Post");
                 });
 
-            modelBuilder.Entity("FbBackend.Models.ProfileFriend", b =>
-            modelBuilder.Entity("FbBackend.Models.User", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Img")
-                        .HasColumnType("nvarchar(max)");
-                    b.Property<bool>("Active")
-                        .HasColumnType("bit");
-
-                    b.Property<int>("Mutual")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("ProfileFriend");
-                });
-
-            modelBuilder.Entity("FbBackend.Models.ProfilePhoto", b =>
-                    b.Property<string>("ProfileImg")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("User");
-                });
-
-            modelBuilder.Entity("FbBackend.Models.Watch", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Url")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("ProfilePhoto");
-                });
-
             modelBuilder.Entity("FbBackend.Models.User", b =>
                 {
                     b.Property<int>("Id")
@@ -209,31 +163,11 @@ namespace FbBackend.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ProfileImg")
-                    b.Property<string>("no_of_comments")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("no_of_like")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("no_of_views")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("posted_date")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("user_dp")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("username")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("video")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
                     b.ToTable("User");
-                    b.ToTable("Watch");
                 });
 #pragma warning restore 612, 618
         }
