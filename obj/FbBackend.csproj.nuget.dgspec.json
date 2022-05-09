@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\VC\\source\\repos\\FB-Asp-.Net-Core-WebApi\\FbBackend.csproj": {}
+    "D:\\dotnet\\FB-Asp-.Net-Core-WebApi\\FbBackend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\VC\\source\\repos\\FB-Asp-.Net-Core-WebApi\\FbBackend.csproj": {
+    "D:\\dotnet\\FB-Asp-.Net-Core-WebApi\\FbBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\VC\\source\\repos\\FB-Asp-.Net-Core-WebApi\\FbBackend.csproj",
+        "projectUniqueName": "D:\\dotnet\\FB-Asp-.Net-Core-WebApi\\FbBackend.csproj",
         "projectName": "FbBackend",
-        "projectPath": "C:\\Users\\VC\\source\\repos\\FB-Asp-.Net-Core-WebApi\\FbBackend.csproj",
+        "projectPath": "D:\\dotnet\\FB-Asp-.Net-Core-WebApi\\FbBackend.csproj",
         "packagesPath": "C:\\Users\\VC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\VC\\source\\repos\\FB-Asp-.Net-Core-WebApi\\obj\\",
+        "outputPath": "D:\\dotnet\\FB-Asp-.Net-Core-WebApi\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\VC\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BZp2WoKBey187Hu8Mz69NlDr9CoUZ4wNBNWuVlP6XpDB4GS91Pa/DnXTN2KlWw/FzUHgMmvZDmdDX21KLphs0g==",
+  "dgSpecHash": "dhB6ga57ZHKimznDZuOcn2MF35WrS1PPaAjgEHoloOGISHSZZKDtB4QEdwRx/LkvE7wZZmdlQzjGvS1xnOAqGQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\VC\\source\\repos\\FB-Asp-.Net-Core-WebApi\\FbBackend.csproj",
+  "projectFilePath": "D:\\dotnet\\FB-Asp-.Net-Core-WebApi\\FbBackend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\VC\\.nuget\\packages\\microsoft.aspnet.cors\\5.2.8\\microsoft.aspnet.cors.5.2.8.nupkg.sha512",
     "C:\\Users\\VC\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.8\\microsoft.aspnet.webapi.client.5.2.8.nupkg.sha512",
@@ -176,12 +176,6 @@
     "C:\\Users\\VC\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
   "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\VC\\source\\repos\\FB-Asp-.Net-Core-WebApi\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    },
     {
       "code": "NU1701",
       "level": "Warning",

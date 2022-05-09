@@ -91,13 +91,13 @@ namespace FbBackend.Data
                     },
                     new User{
                         Name="Yorgos Lanthimos",
-                        ProfileImg="https://i.guim.co.uk/img/media/bef59b61d605b9546a3ca9786d0af692134cd3ed/0_1194_3349_2008/master/3349.jpg",
+                        ProfileImg="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Yorgos_Lanthimos%2C_THE_LOBSTER%2C_Fantastic_Fest_2015_-9674_%2827161878820%29.jpg/330px-Yorgos_Lanthimos%2C_THE_LOBSTER%2C_Fantastic_Fest_2015_-9674_%2827161878820%29.jpg",
                         Active=true,
                         Mutual=4
                     },
                     new User{
                         Name="Alejandro Inarritu",
-                        ProfileImg="https://i.guim.co.uk/img/media/340ca58f071f34d34046d6e12885f0b192f10eba/0_93_3000_1801/master/3000.jpg",
+                        ProfileImg="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Alejandro_Gonz%C3%A1lez_I%C3%B1%C3%A1rritu_2014.jpg/654px-Alejandro_Gonz%C3%A1lez_I%C3%B1%C3%A1rritu_2014.jpg",
                         Active=true,
                         Mutual=4
                     },
@@ -112,49 +112,168 @@ namespace FbBackend.Data
                 {
                     context.User.Add(u);
                 }
+
                 context.SaveChanges();
-
             }
-          
-            if (!context.FriendList.Any())
-            {
-                var friend = new FriendList[]
-                {
-                    new FriendList
-                    {
-                        Accept = "neutral",
-                        Education = "Studied at harvard University",
-                        Image_url = "https://scontent.fixm4-1.fna.fbcdn.net/v/t39.30808-1/274956007_8430212720338310_8265895301701885934_n.jpg?stp=dst-jpg_p240x240&_nc_cat=105&ccb=1-6&_nc_sid=7206a8&_nc_ohc=euEMd7VXK1sAX_KdYLS&_nc_oc=AQnhtdVPDiMjQXDKgZKyApjaBPjOpIwS9rqFb_KWnT7EnqIy5KfmT0OQqWVCwsKUYBulUEmoBasgaPWfmEhXoo7N&tn=zGKqiCGg0sq9Xfek&_nc_ht=scontent.fixm4-1.fna&oh=00_AT_MbYXRSjXN7YRkNhnJ-BmARpQsS16QxVD60zedS-Hklg&oe=627E92F7",
-                        Mutual_friends = "2",
-                        Name = "Deepika Sanna",
-                        Friends_url ="https://www.photopills.com/sites/default/files/tutorials/2020/sunrise-cover.jpg",
-                        Friends_name = "Yazhini", 
-                        Work = "Programmer at Meta"
-                    },
-                    new FriendList{
-                        Accept = "neutral",
-                        Education = "Studied at UCSF",
-                        Image_url = "https://scontent.fixm4-1.fna.fbcdn.net/v/t1.6435-9/97139484_10111900522284741_395593460356218880_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=U_iztQOquIkAX_2jFZ_&_nc_ht=scontent.fixm4-1.fna&oh=00_AT80agCQahOmIINzgxoDZziYanavMxOw_OCcQpjYzFllNA&oe=626B2FF1",
-                        Mutual_friends = "1",
-                        Name = "Priscilla Chan",
-                        Friends_url ="https://www.photopills.com/sites/default/files/tutorials/2020/sunrise-cover.jpg",
-                        Friends_name = "Yazhini",
-                        Work ="Founder at Chan Zuckerberg Initiative"
 
+            if (!context.ProfileFriend.Any())
+            {
+                var profileFriends = new ProfileFriend[]
+                {
+                    new ProfileFriend
+                    {
+                        Name = "Burn Abasse",
+                        Img = "https://randomuser.me/api/portraits/men/23.jpg",
+                    },
+                    new ProfileFriend
+                    {
+                        Name = "Neab Mey",
+                        Img = "https://randomuser.me/api/portraits/men/27.jpg",
+                    },
+                    new ProfileFriend
+                    {
+                        Name = "Ogbulata Rolly B Roland",
+                        Img = "https://randomuser.me/api/portraits/men/22.jpg",
+                    },
+                    new ProfileFriend
+                    {
+                        Name = "Machaba Marceloovoid",
+                        Img = "https://randomuser.me/api/portraits/men/52.jpg",
+                    },
+                    new ProfileFriend
+                    {
+                        Name = "Rubengod de Luque",
+                        Img = "https://randomuser.me/api/portraits/men/67.jpg",
+                    },
+                    new ProfileFriend
+                    {
+                        Name = "Sangkut Susanti",
+                        Img = "https://randomuser.me/api/portraits/men/39.jpg",
+                    },
+                    new ProfileFriend
+                    {
+                        Name = "Kazol Kazol",
+                        Img = "https://randomuser.me/api/portraits/men/81.jpg",
+                    },
+                    new ProfileFriend
+                    {
+                        Name = "LƯU NGUYÊN",
+                        Img = "https://randomuser.me/api/portraits/men/80.jpg",
+                    },
+                    new ProfileFriend
+                    {
+                        Name = "Yeen Prc",
+                        Img = "https://randomuser.me/api/portraits/men/61.jpg",
                     }
                 };
-                foreach (FriendList f in friend)
+
+                foreach (ProfileFriend pf in profileFriends)
                 {
-                    context.FriendList.Add(f);
+                    context.ProfileFriend.Add(pf);
                 }
+
+                context.SaveChanges();
+            }
+
+            if (!context.ProfilePhoto.Any())
+            {
+                var profilePhotos = new ProfilePhoto[]
+                {
+                    new ProfilePhoto
+                    {
+                        Url = "https://randomuser.me/api/portraits/men/4.jpg"
+                    },
+                    new ProfilePhoto
+                    {
+                        Url = "https://randomuser.me/api/portraits/men/88.jpg"
+                    },
+                    new ProfilePhoto
+                    {
+                        Url = "https://randomuser.me/api/portraits/men/66.jpg"
+                    },
+                    new ProfilePhoto
+                    {
+                        Url = "https://randomuser.me/api/portraits/men/62.jpg"
+                    },
+                    new ProfilePhoto
+                    {
+                        Url = "https://randomuser.me/api/portraits/men/90.jpg"
+                    },
+                    new ProfilePhoto
+                    {
+                        Url = "https://randomuser.me/api/portraits/men/49.jpg"
+                    },
+                    new ProfilePhoto
+                    {
+                        Url = "https://randomuser.me/api/portraits/men/24.jpg"
+                    },
+                    new ProfilePhoto
+                    {
+                        Url = "https://randomuser.me/api/portraits/men/55.jpg"
+                    },
+                    new ProfilePhoto
+                    {
+                        Url = "https://randomuser.me/api/portraits/men/82.jpg"
+                    }
+                };
+
+                foreach (ProfilePhoto pp in profilePhotos)
+                {
+                    context.ProfilePhoto.Add(pp);
+                }
+
+                context.SaveChanges();
+            }
+
+            if (!context.Watch.Any())
+            {
+                var watchs = new Watch[]
+                {
+                    new Watch
+                    {
+                          no_of_comments = "25M",
+                          no_of_like = "32M",
+                          no_of_views = "112M",
+                          posted_date = "march 27 at 12:45",
+                          user_dp = "https://static.toiimg.com/photo/msid-90466724/90466724.jpg?39050",
+                          username = "Ram charan",
+                          video = "https://www.youtube.com/embed/G62HrubdD6o"
+                    },
+                    new Watch
+                    {
+                        no_of_comments = "25M",
+                        no_of_like = "32M",
+                        no_of_views = "112M",
+                        posted_date = "march 27 at 12:45",
+                        user_dp = "https://static.toiimg.com/photo/msid-90466724/90466724.jpg?39050",
+                        username = "Ram charan",
+                        video = "https://www.youtube.com/embed/G62HrubdD6o"
+                    },
+                    new Watch
+                    {
+                        no_of_comments = "25M",
+                        no_of_like = "32M",
+                        no_of_views = "112M",
+                        posted_date = "march 27 at 12:45",
+                        user_dp = "https://static.toiimg.com/photo/msid-90466724/90466724.jpg?39050",
+                        username = "Ram charan",
+                        video = "https://www.youtube.com/embed/G62HrubdD6o"
+                    },
+                };
+
+                foreach (Watch w in watchs)
+                {
+                    context.Watch.Add(w);
+                }
+
                 context.SaveChanges();
             }
 
             if (!context.FriendSuggestion.Any())
             {
                 var friend = new FriendSuggestion[]
-               {
-                   new FriendSuggestion
+                {
+                    new FriendSuggestion
                     {
                         Accept = "neutral",
                         Education = "Studied at harvard University",
@@ -165,7 +284,7 @@ namespace FbBackend.Data
                         Friends_name = "Pranesh",
                         Work = "Co-Chair at Economic Security Project and Co-founder at Facebook App"
                     },
-                   new FriendSuggestion
+                    new FriendSuggestion
                     {
                         Accept = "neutral",
                         Education = "NYU Stern School of Business",
@@ -237,56 +356,103 @@ namespace FbBackend.Data
                         Friends_url ="https://www.photopills.com/sites/default/files/tutorials/2020/sunrise-cover.jpg",
                         Friends_name = "Jerry",
                         Work = "Chief operating officer at Meta"
-                    }   
-               };
+                    }
+                };
+
                 foreach (FriendSuggestion f in friend)
                 {
                     context.FriendSuggestion.Add(f);
                 }
+
                 context.SaveChanges();
             }
-            if (!context.Watch.Any())
+
+            if (!context.FriendList.Any())
             {
-                var watchs = new Watch[]
-              {
-                  new Watch
-                  {
-                      no_of_comments = "25M",
-                      no_of_like = "32M",
-                      no_of_views = "112M",
-                      posted_date = "march 27 at 12:45",
-                      user_dp = "https://static.toiimg.com/photo/msid-90466724/90466724.jpg?39050",
-                      username = "Ram charan",
-                      video = "https://www.youtube.com/embed/G62HrubdD6o"
-                  },
-                  new Watch
-                  {
-                      no_of_comments = "25M",
-                      no_of_like = "32M",
-                      no_of_views = "112M",
-                      posted_date = "march 27 at 12:45",
-                      user_dp = "https://static.toiimg.com/photo/msid-90466724/90466724.jpg?39050",
-                      username = "Ram charan",
-                      video = "https://www.youtube.com/embed/G62HrubdD6o"
-                  },
-                  new Watch
-                  {
-                      no_of_comments = "25M",
-                      no_of_like = "32M",
-                      no_of_views = "112M",
-                      posted_date = "march 27 at 12:45",
-                      user_dp = "https://static.toiimg.com/photo/msid-90466724/90466724.jpg?39050",
-                      username = "Ram charan",
-                      video = "https://www.youtube.com/embed/G62HrubdD6o"
-                  },
-
-              };
-                foreach (Watch w in watchs)
+                var friend = new FriendList[]
                 {
-                    context.Watch.Add(w);
-                }
-                context.SaveChanges();
+                    new FriendList
+                    {
+                        Accept = "neutral",
+                        Education = "Studied at harvard University",
+                        Image_url = "https://scontent.fixm4-1.fna.fbcdn.net/v/t39.30808-1/274956007_8430212720338310_8265895301701885934_n.jpg?stp=dst-jpg_p240x240&_nc_cat=105&ccb=1-6&_nc_sid=7206a8&_nc_ohc=euEMd7VXK1sAX_KdYLS&_nc_oc=AQnhtdVPDiMjQXDKgZKyApjaBPjOpIwS9rqFb_KWnT7EnqIy5KfmT0OQqWVCwsKUYBulUEmoBasgaPWfmEhXoo7N&tn=zGKqiCGg0sq9Xfek&_nc_ht=scontent.fixm4-1.fna&oh=00_AT_MbYXRSjXN7YRkNhnJ-BmARpQsS16QxVD60zedS-Hklg&oe=627E92F7",
+                        Mutual_friends = "2",
+                        Name = "Deepika Sanna",
+                        Friends_url ="https://www.photopills.com/sites/default/files/tutorials/2020/sunrise-cover.jpg",
+                        Friends_name = "Yazhini",
+                        Work = "Programmer at Meta"
+                    },
+                    new FriendList{
+                        Accept = "neutral",
+                        Education = "Studied at UCSF",
+                        Image_url = "https://scontent.fixm4-1.fna.fbcdn.net/v/t1.6435-9/97139484_10111900522284741_395593460356218880_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=U_iztQOquIkAX_2jFZ_&_nc_ht=scontent.fixm4-1.fna&oh=00_AT80agCQahOmIINzgxoDZziYanavMxOw_OCcQpjYzFllNA&oe=626B2FF1",
+                        Mutual_friends = "1",
+                        Name = "Priscilla Chan",
+                        Friends_url ="https://www.photopills.com/sites/default/files/tutorials/2020/sunrise-cover.jpg",
+                        Friends_name = "Yazhini",
+                        Work ="Founder at Chan Zuckerberg Initiative"
+                    }
+                };
 
+                foreach (FriendList f in friend)
+                {
+                    context.FriendList.Add(f);
+                }
+
+                context.SaveChanges();
+            }
+
+            if (!context.MarketData.Any())
+            {
+                var marketData = new MarketData[]
+                {
+                    new MarketData
+                    {
+                        Src = "https://firebasestorage.googleapis.com/v0/b/facebook-ui-clone-2d854.appspot.com/o/himalaya.jpg?alt=media&token=a6c4836f-6a1e-4551-bcb8-bac1b24db657",
+                        Dec = "Himalayan",
+                        Price = 2500,
+                        Location = "chennai"
+                    },
+                    new MarketData
+                    {
+                        Src = "https://firebasestorage.googleapis.com/v0/b/facebook-ui-clone-2d854.appspot.com/o/motorbike.jpg?alt=media&token=e50cab0e-feaa-428c-b490-e8d1bc226dec",
+                        Dec = "Bike",
+                        Price = 1000,
+                        Location = "Hosur"
+                    },
+                    new MarketData
+                    {
+                        Src = "https://firebasestorage.googleapis.com/v0/b/facebook-ui-clone-2d854.appspot.com/o/ktm.jpg?alt=media&token=d249233e-655d-43ee-8345-04655da09915",
+                        Dec = "KTM",
+                        Price = 78000,
+                        Location = "Banglore"
+                    }
+
+                };
+
+                foreach (MarketData md in marketData)
+                {
+                    context.MarketData.Add(md);
+                }
+
+                context.SaveChanges();
+            }
+
+            if (!context.Gpost.Any())
+            {
+                //Console.WriteLine("Gposts created");
+                var gPosts = new Gpost[] {
+                    new Gpost { Name = "Tenz", ProfileImg = "https://www.bestpvpers.com/wp-content/uploads/2021/09/tenz-1.jpg", VideoUrl="https://www.youtube.com/embed/uIt298IgFhk" },
+                    new Gpost { Name="Unreal Dreamer", ProfileImg="https://yt3.ggpht.com/qH3O0F_fbvANyzk904IHQaxDUootPy38WwTQxInclcM0b2s4ttnkdHxeURQ0y3YJD87AOqAjdg=s176-c-k-c0x00ffffff-no-rj-mo", VideoUrl="https://www.youtube.com/embed/-dCIPjxH3wU"},
+                    new Gpost {Name="Mark", ProfileImg = "https://yourwikis.com/wp-content/uploads/2020/01/mark-zuck-img.jpg", VideoUrl="https://www.youtube.com/embed/p4QG59y6FGE"}
+                };
+
+                foreach (Gpost p in gPosts)
+                {
+                    context.Gpost.Add(p);
+                }
+
+                context.SaveChanges();
             }
         }
     }
