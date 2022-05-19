@@ -455,3 +455,12 @@ D:\New folder (4)\obj\Debug\netcoreapp3.1\FbBackend.csproj.CopyComplete
 D:\New folder (4)\obj\Debug\netcoreapp3.1\FbBackend.dll
 D:\New folder (4)\obj\Debug\netcoreapp3.1\FbBackend.pdb
 D:\New folder (4)\obj\Debug\netcoreapp3.1\FbBackend.genruntimeconfig.cache
+C:\Users\VC\source\repos\FB-Asp-.Net-Core-WebApi\bin\Debug\netcoreapp3.1\MySqlConnector.dll
+C:\Users\VC\source\repos\FB-Asp-.Net-Core-WebApi\bin\Debug\netcoreapp3.1\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\VC\source\repos\FB-Asp-.Net-Core-WebApi\bin\Debug\netcoreapp3.1\Pomelo.JsonObject.dll
+C:\Users\VC\source\repos\FB-Asp-.Net-Core-WebApi\bin\Debug\netcoreapp3.1\Amazon.Lambda.APIGatewayEvents.dll
+C:\Users\VC\source\repos\FB-Asp-.Net-Core-WebApi\bin\Debug\netcoreapp3.1\Amazon.Lambda.ApplicationLoadBalancerEvents.dll
+C:\Users\VC\source\repos\FB-Asp-.Net-Core-WebApi\bin\Debug\netcoreapp3.1\Amazon.Lambda.AspNetCoreServer.dll
+C:\Users\VC\source\repos\FB-Asp-.Net-Core-WebApi\bin\Debug\netcoreapp3.1\Amazon.Lambda.Core.dll
+C:\Users\VC\source\repos\FB-Asp-.Net-Core-WebApi\bin\Debug\netcoreapp3.1\Amazon.Lambda.Logging.AspNetCore.dll
+C:\Users\VC\source\repos\FB-Asp-.Net-Core-WebApi\bin\Debug\netcoreapp3.1\Amazon.Lambda.Serialization.SystemTextJson.dll

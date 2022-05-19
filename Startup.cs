@@ -28,7 +28,7 @@ namespace FbBackend
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<FbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))); //.UseMySql mysql
 
             services.AddCors(options => {
                 options.AddPolicy("AllowMyOrigin",

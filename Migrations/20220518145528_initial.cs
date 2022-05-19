@@ -2,7 +2,7 @@
 
 namespace FbBackend.Migrations
 {
-    public partial class setup : Migration
+    public partial class initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -44,6 +44,37 @@ namespace FbBackend.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_FriendSuggestion", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Gpost",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(nullable: true),
+                    ProfileImg = table.Column<string>(nullable: true),
+                    VideoUrl = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Gpost", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "MarketData",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Dec = table.Column<string>(nullable: true),
+                    Location = table.Column<string>(nullable: true),
+                    Src = table.Column<string>(nullable: true),
+                    Price = table.Column<int>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_MarketData", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -142,6 +173,12 @@ namespace FbBackend.Migrations
 
             migrationBuilder.DropTable(
                 name: "FriendSuggestion");
+
+            migrationBuilder.DropTable(
+                name: "Gpost");
+
+            migrationBuilder.DropTable(
+                name: "MarketData");
 
             migrationBuilder.DropTable(
                 name: "Post");

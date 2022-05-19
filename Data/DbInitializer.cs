@@ -385,7 +385,7 @@ namespace FbBackend.Data
                     new FriendList{
                         Accept = "neutral",
                         Education = "Studied at UCSF",
-                        Image_url = "https://scontent.fixm4-1.fna.fbcdn.net/v/t1.6435-9/97139484_10111900522284741_395593460356218880_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=U_iztQOquIkAX_2jFZ_&_nc_ht=scontent.fixm4-1.fna&oh=00_AT80agCQahOmIINzgxoDZziYanavMxOw_OCcQpjYzFllNA&oe=626B2FF1",
+                        Image_url = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Priscilla_Chan%2C_2018_%28cropped%29.jpg/330px-Priscilla_Chan%2C_2018_%28cropped%29.jpg",
                         Mutual_friends = "1",
                         Name = "Priscilla Chan",
                         Friends_url ="https://www.photopills.com/sites/default/files/tutorials/2020/sunrise-cover.jpg",

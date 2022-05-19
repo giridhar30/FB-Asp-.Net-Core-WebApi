@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FbBackend.Migrations
 {
     [DbContext(typeof(FbContext))]
-    [Migration("20220509163519_marketdata")]
-    partial class marketdata
+    [Migration("20220518145528_initial")]
+    partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -90,6 +90,27 @@ namespace FbBackend.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("FriendSuggestion");
+                });
+
+            modelBuilder.Entity("FbBackend.Models.Gpost", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ProfileImg")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("VideoUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Gpost");
                 });
 
             modelBuilder.Entity("FbBackend.Models.MarketData", b =>
